@@ -1,4 +1,4 @@
 # demo
 my first git repo
 <br>
-Aurthor - Faheem Mohd Parray
+<h4>Aurthor</h4> - Faheem Mohd Parray
