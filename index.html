@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0e14" />
+    <title>Gestures — Make your phone move with you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero panel">
+        <nav><a class="brand" href="#top"><span class="brand-mark">G</span> gestures</a><button class="text-button" id="scanButton">Re-scan device</button></nav>
+        <div class="hero-content">
+          <div class="eyebrow"><i></i> Your phone is ready</div>
+          <h1>Make your phone<br /><em>move with you.</em></h1>
+          <p>We found the hardware your device supports. Choose a movement, make it yours.</p>
+          <button class="primary-button" id="exploreButton">Explore gestures <span>↓</span></button>
+        </div>
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="device-card"><div class="device-notch"></div><div class="device-screen"><span class="wave one"></span><span class="wave two"></span><span class="wave three"></span><span class="screen-label">shake</span><span class="screen-icon">✦</span></div></div>
+      </section>
+
+      <section class="capabilities" id="gestures">
+        <div class="section-heading"><div><div class="eyebrow dark"><i></i> Built for this device</div><h2>Available gestures</h2></div><p>These controls work with the hardware we detected on your phone.</p></div>
+        <div class="capability-grid">
+          <article class="capability-card accent-peach"><div class="card-top"><span class="cap-icon">⌁</span><span class="available">Available</span></div><h3>Motion sensing</h3><p>Shake, flip and turn your phone to get things done.</p><div class="sensor-row"><span>Accelerometer</span><span>Gyroscope</span></div></article>
+          <article class="capability-card accent-lilac"><div class="card-top"><span class="cap-icon">◉</span><span class="available">Available</span></div><h3>Button sequences</h3><p>Make your volume and power buttons work harder.</p><div class="sensor-row"><span>Volume keys</span><span>Power key</span></div></article>
+          <article class="capability-card accent-mint"><div class="card-top"><span class="cap-icon">☝</span><span class="available">Available</span></div><h3>Touch &amp; tap</h3><p>Use taps on the back of your phone for shortcuts.</p><div class="sensor-row"><span>Touch sensor</span></div></article>
+        </div>
+      </section>
+
+      <section class="featured panel" id="featured">
+        <div class="featured-copy"><div class="eyebrow"><i></i> Featured gesture</div><h2>A little shake.<br /><em>A lot easier.</em></h2><p>Shake your phone twice to instantly turn on the flashlight — even when your screen is locked.</p><button class="secondary-button" id="configureButton">Configure shake <span>→</span></button></div>
+        <div class="gesture-visual"><div class="motion-line line-a"></div><div class="motion-line line-b"></div><div class="motion-line line-c"></div><div class="phone-tilt"><div class="mini-screen"><span>9:41</span><b>✦</b><small>FLASHLIGHT</small></div></div><div class="gesture-pill">↝&nbsp; SHAKE TWICE</div></div>
+      </section>
+
+      <section class="gesture-library" id="library">
+        <div class="section-heading"><div><div class="eyebrow dark"><i></i> Make it yours</div><h2>Popular shortcuts</h2></div><button class="text-button dark-button" id="showAll">View all <span>→</span></button></div>
+        <div class="shortcut-list" id="shortcutList">
+          <button class="shortcut" data-name="Triple press power"><span class="shortcut-art power-art"><b></b><b></b><b></b></span><span class="shortcut-copy"><strong>Triple press power</strong><small>Turn on flashlight</small></span><span class="shortcut-action">＋</span></button>
+          <button class="shortcut" data-name="Double tap volume up"><span class="shortcut-art volume-art"><b>+</b><b>+</b></span><span class="shortcut-copy"><strong>Double tap volume up</strong><small>Next track</small></span><span class="shortcut-action">＋</span></button>
+          <button class="shortcut" data-name="Double tap the back"><span class="shortcut-art back-art">◌<i>◌</i></span><span class="shortcut-copy"><strong>Double tap the back</strong><small>Play or pause</small></span><span class="shortcut-action">＋</span></button>
+          <button class="shortcut extra" data-name="Turn phone sideways"><span class="shortcut-art turn-art">↻</span><span class="shortcut-copy"><strong>Turn phone sideways</strong><small>Open camera</small></span><span class="shortcut-action">＋</span></button>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast" role="status"><span>✦</span><div><b>Gesture added</b><small id="toastText">Ready to configure</small></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
